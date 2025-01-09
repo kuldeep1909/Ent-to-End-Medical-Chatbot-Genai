@@ -22,8 +22,8 @@ Before running the project, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/End-to-End-Medical-Chatbot-Genai.git
-cd End-to-End-Medical-Chatbot-Genai
+git clone https://github.com/kuldeep1909/Ent-to-End-Medical-Chatbot-Genai
+
 ```
 
 ### Step 2: Create a Conda Environment
