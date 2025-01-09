@@ -21,21 +21,86 @@ Before running the project, ensure you have the following installed:
 
 ### Step 1: Clone the Repository
 
-Clone the repository
-
 ```bash
-Project repo: https://github.com/
+git clone https://github.com/your-repo/End-to-End-Medical-Chatbot-Genai.git
+cd End-to-End-Medical-Chatbot-Genai
 ```
-### Step 02:  Create a cnda environment after opening the repository
+
+### Step 2: Create a Conda Environment
+
 ```bash
 conda create -n ragmed python=3.10 -y
-```
-
-```bash
 conda activate ragmed
 ```
 
-### Step 02 - Install the requirements
+### Step 3: Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 4: Set Up Environment Variables
+
+Create a `.env` file in the root directory and add your API keys:
+
+```plaintext
+PINECONE_API_KEY=your_pinecone_api_key
+GROQ_API_KEY=your_groq_api_key
+```
+
+## Running the Application
+
+To start the Flask application, run:
+
+```bash
+python app.py
+```
+
+The application will be available at `http://0.0.0.0:8080`.
+
+## Project Structure
+
+```
+End-to-End-Medical-Chatbot-Genai/
+├── src/
+│   ├── __init__.py
+│   ├── helper.py
+│   └── prompt.py
+├── templates/
+│   └── index.html
+├── .env
+├── requirements.txt
+├── setup.py
+├── app.py
+├── README.md
+└── research/
+    └── trials.ipynb
+```
+
+## Usage
+
+1. Open your web browser and navigate to `http://0.0.0.0:8080`.
+2. Enter your medical query in the input box and press "Enter".
+3. The chatbot will process your query and return a response.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- **LangChain**: For the powerful framework enabling the RAG approach.
+- **Pinecone**: For vector storage and retrieval.
+- **Groq**: For the high-performance language model.
+- **Hugging Face**: For the embeddings used in the project.
+
+## Contact
+
+For any questions or feedback, please contact [Kuldeep Malviya](mailto:malviyakuldeep38@gmail.com).
+```
+
+This `README.md` provides a comprehensive overview of your project, including installation instructions, usage, and project structure. It also includes sections for contributing, licensing, and acknowledgments.
